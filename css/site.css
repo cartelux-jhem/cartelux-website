@@ -714,41 +714,93 @@ ul { margin: 0; padding: 0; list-style: none; }
 .site-footer {
   background: var(--footer-bg);
   color: var(--footer-ink);
-  padding-block: var(--space-8) var(--space-6);
+  padding-block: var(--space-9) var(--space-6);
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--space-6);
-  padding-bottom: var(--space-7);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: var(--space-7);
+  padding-bottom: var(--space-8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.footer-top .logo img { height: 20px; }
-
-.footer-top p {
-  margin-top: var(--space-4);
-  color: rgba(255, 255, 255, 0.6);
-  max-width: 32ch;
+.footer-top:has(.footer-newsletter) {
+  grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(0, 3fr);
 }
 
-.footer-links { display: flex; gap: var(--space-8); }
-.footer-links h4 {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
+.footer-top h4 {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0 0 var(--space-4);
+  color: #fff;
+  margin: var(--space-6) 0 var(--space-4);
 }
-.footer-links ul { display: flex; flex-direction: column; gap: var(--space-3); }
-.footer-links a {
+
+.footer-brand .logo img { height: 20px; }
+
+.footer-address {
+  margin-top: var(--space-5);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 28ch;
+}
+
+.social-icons { display: flex; gap: var(--space-4); }
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.social-icon svg { width: 24px; height: 24px; fill: currentColor; }
+.social-icon:hover { opacity: 1; transform: translateY(-2px); }
+
+.footer-nav-columns {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.footer-nav-columns ul { display: flex; flex-direction: column; gap: var(--space-4); }
+.footer-nav-columns a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
   color: rgba(255, 255, 255, 0.85);
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: color 0.15s ease;
 }
-.footer-links a:hover { color: var(--accent-warm); }
+.footer-nav-columns a:hover { color: var(--accent-warm); }
+
+.newsletter-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--space-4);
+}
+
+.newsletter-btn {
+  display: inline-flex;
+  align-self: flex-start;
+  background: #fff;
+  color: var(--ink);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 24px 8px 8px 24px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.newsletter-btn:hover { opacity: 0.88; }
+
+.footer-newsletter { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-newsletter .social-icons { margin-top: var(--space-2); }
 
 .footer-bottom {
   padding-top: var(--space-6);
@@ -756,6 +808,16 @@ ul { margin: 0; padding: 0; list-style: none; }
   justify-content: space-between;
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.85rem;
+}
+
+@media (max-width: 960px) {
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-newsletter { grid-column: 1 / -1; }
+}
+
+@media (max-width: 640px) {
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-nav-columns { gap: var(--space-6); }
 }
 
 /* ============================================================
@@ -806,9 +868,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .carousel-controls { gap: var(--space-5); }
   .testimonial-slide::before { font-size: 4.5rem; top: -0.3em; }
-
-  .footer-top { flex-direction: column; }
-  .footer-links { gap: var(--space-6); flex-wrap: wrap; }
 }
 
 @media (max-width: 560px) {
@@ -1475,3 +1534,25 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 560px) {
   .values-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   Legal content (Privacy Policy / Terms of Use)
+   ============================================================ */
+.legal-content .wrap { max-width: 780px; }
+
+.legal-content h2 {
+  font-size: 1.3rem;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+.legal-content h2:first-child { margin-top: 0; }
+
+.legal-content p { color: var(--ink-soft); max-width: none; }
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: 1.3em;
+  margin: 0 0 var(--space-5);
+  color: var(--ink-soft);
+}
+.legal-content li { margin-bottom: var(--space-3); }
