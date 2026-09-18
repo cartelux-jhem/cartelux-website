@@ -16,7 +16,7 @@
 
     <div class="investors-cta">
       <p class="lede">If you can help us move even faster, please get in touch.</p>
-      <a class="btn btn-primary" href="mailto:hello@cartelux.ai">CONTACT US</a>
+      <a class="btn btn-primary" href="mailto:marketing@cartelux.ai">CONTACT US</a>
     </div>
   </div>
 </section>

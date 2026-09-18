@@ -24,7 +24,7 @@
 
     <h2>2. Disclosure of information</h2>
     <p>Cartelux only discloses personal information for the purposes for which it was collected, as set out above (this list is not exhaustive). Any disclosure is made on a confidential basis and in accordance with law. We may also share your personal information where we are under a duty to disclose it to comply with a legal obligation, to enforce our website terms or any other agreement, or to protect Cartelux&rsquo;s rights &mdash; including exchanging information with other organisations for fraud protection and prevention.</p>
-    <p>A copy of this Privacy Policy is available to anyone who requests it, and a link to it is provided from our website. Any requests should be directed to <a href="mailto:hello@cartelux.ai">hello@cartelux.ai</a>.</p>
+    <p>A copy of this Privacy Policy is available to anyone who requests it, and a link to it is provided from our website. Any requests should be directed to <a href="mailto:marketing@cartelux.ai">marketing@cartelux.ai</a>.</p>
 
     <h2>3. Information security</h2>
     <p>We take reasonable steps to protect your personal information from unauthorised access and against unlawful processing, accidental loss, destruction and damage, keeping it only for as long as reasonable or as the law requires. We require our employees and any service providers we disclose personal information to, to comply with confidentiality and security requirements consistent with the Privacy Act, and we take reasonable steps to destroy or de-identify personal information once we no longer need it.</p>
@@ -32,6 +32,6 @@
 
     <h2>4. Access and correction</h2>
     <p>We take reasonable steps to keep the personal information we collect, use or disclose accurate, complete and up to date. If your details change &mdash; such as your address or phone number &mdash; please let us know using the contact details on our website. Cartelux will promptly acknowledge and respond to any request for access to or correction of personal information, provided we&rsquo;ve been given adequate proof of identity and sufficient reason for the request.</p>
-    <p>A copy of this Privacy Policy is available to anyone who requests it, and a link to it is provided from our website. Any requests should be directed to <a href="mailto:hello@cartelux.ai">hello@cartelux.ai</a>.</p>
+    <p>A copy of this Privacy Policy is available to anyone who requests it, and a link to it is provided from our website. Any requests should be directed to <a href="mailto:marketing@cartelux.ai">marketing@cartelux.ai</a>.</p>
   </div>
 </section>

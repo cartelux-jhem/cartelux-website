@@ -15,6 +15,6 @@
       </blockquote>
     </div>
 
-    <p class="case-download"><a class="link-arrow" href="mailto:hello@cartelux.ai?subject=Aston%20Martin%20case%20study">Email us for the full Aston Martin case study <span aria-hidden="true">&rarr;</span></a></p>
+    <p class="case-download"><a class="link-arrow" href="mailto:marketing@cartelux.ai?subject=Aston%20Martin%20case%20study">Email us for the full Aston Martin case study <span aria-hidden="true">&rarr;</span></a></p>
   </div>
 </section>
