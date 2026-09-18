@@ -71,4 +71,12 @@
 
     window.addEventListener('resize', syncDots);
   }
+
+  document.querySelectorAll('.bio-toggle').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      button.querySelector('.bio-toggle-label').textContent = expanded ? 'Read bio' : 'Hide bio';
+    });
+  });
 })();

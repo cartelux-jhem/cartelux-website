@@ -1,4 +1,4 @@
-<section class="section testimonials" id="about">
+<section class="section testimonials">
   <div class="wrap">
     <div class="section-head">
       <h2>Trusted by the world&rsquo;s leading automotive brands</h2>
