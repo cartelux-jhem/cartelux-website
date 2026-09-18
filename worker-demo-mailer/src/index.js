@@ -84,7 +84,7 @@ export default {
     try {
       await env.EMAIL.send({
         to: 'marketing@cartelux.ai',
-        from: 'noreply@cartelux.ai',
+        from: 'Cartelux Website <noreply@notify.cartelux.ai>',
         subject: `New demo request from ${firstName} ${lastName}`,
         html,
         text,
