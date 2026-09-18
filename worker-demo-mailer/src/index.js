@@ -90,7 +90,7 @@ export default {
         text,
       });
     } catch (err) {
-      return jsonResponse({ error: 'Failed to send email' }, 502, origin);
+      return jsonResponse({ error: 'Failed to send email', detail: String(err && err.message || err) }, 502, origin);
     }
 
     return jsonResponse({ ok: true }, 200, origin);
