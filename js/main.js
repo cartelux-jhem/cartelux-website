@@ -79,4 +79,15 @@
       button.querySelector('.bio-toggle-label').textContent = expanded ? 'Read bio' : 'Hide bio';
     });
   });
+
+  var newsletterForm = document.getElementById('newsletter-form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var email = newsletterForm.email.value.trim();
+      var subject = encodeURIComponent('Newsletter signup');
+      var body = encodeURIComponent('Please add ' + email + ' to the Cartelux newsletter.');
+      window.location.href = 'mailto:marketing@cartelux.ai?subject=' + subject + '&body=' + body;
+    });
+  }
 })();

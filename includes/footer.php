@@ -47,10 +47,11 @@
 
     <div class="footer-newsletter">
         <h4>Newsletter</h4>
-        <p class="newsletter-text">Get regular updates on Cartelux</p>
-        <a class="newsletter-btn" href="mailto:marketing@cartelux.ai?subject=Newsletter%20signup">SIGN UP</a>
-
-        
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="footer-email">Get regular updates on Cartelux</label>
+          <input type="email" id="footer-email" name="email" placeholder="Enter e-mail address" required>
+          <button type="submit">SIGN UP</button>
+        </form>
     </div>
 
     <div class="footer-bottom">
