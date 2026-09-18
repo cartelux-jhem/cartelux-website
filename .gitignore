@@ -38,6 +38,9 @@ Thumbs.db
 # Environment variables / secrets
 .env
 
+# Build output
+dist/
+
 # Applications
 *.app
 *.exe

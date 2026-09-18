@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <a class="logo" href="index.php" aria-label="Cartelux home">
+        <a class="logo" href="/" aria-label="Cartelux home">
           <img src="images/Logo_white.svg" alt="Cartelux" width="225" height="20">
         </a>
         <p>Adtech built for automotive retail networks&mdash;from global brand to local dealer.</p>

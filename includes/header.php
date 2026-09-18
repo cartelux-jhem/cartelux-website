@@ -1,7 +1,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header" id="site-header">
   <div class="wrap">
-    <a class="logo" href="index.php" aria-label="Cartelux home">
+    <a class="logo" href="/" aria-label="Cartelux home">
       <img src="images/Logo.svg" alt="Cartelux" width="135" height="12">
     </a>
 
