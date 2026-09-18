@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Press &mdash; Cartelux</title>
-  <meta name="description" content="Keep up to date with Cartelux's latest achievements as we empower the world's most innovative brands.">
+  <title>Investors &mdash; Cartelux</title>
+  <meta name="description" content="We're on a mission to transform the digital marketing industry &mdash; and are looking for partners and investors who share this vision.">
 
   <link rel="icon" href="images/cartelux-logo.png" type="image/svg+xml">
 
@@ -20,8 +20,8 @@
   <?php include __DIR__ . '/includes/header.php'; ?>
 
   <main id="main">
-    <?php include __DIR__ . '/includes/press-hero.php'; ?>
-    <?php include __DIR__ . '/includes/press-list.php'; ?>
+    <?php include __DIR__ . '/includes/investors-hero.php'; ?>
+    <?php include __DIR__ . '/includes/investors-body.php'; ?>
   </main>
 
   <?php include __DIR__ . '/includes/footer.php'; ?>

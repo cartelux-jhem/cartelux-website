@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/includes/utils/assets.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="<?php echo asset_url('css/site.css'); ?>">
 </head>
 <body>
 
@@ -25,6 +26,6 @@
 
   <?php include __DIR__ . '/includes/footer.php'; ?>
 
-  <script src="js/request-demo.js"></script>
+  <script src="<?php echo asset_url('js/request-demo.js'); ?>"></script>
 </body>
 </html>
