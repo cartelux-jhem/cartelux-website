@@ -37,7 +37,7 @@
             <li><a href="/request-demo">Request Demo</a></li>
           </ul>
           <ul>
-            <li><a href="#login">Login <span aria-hidden="true">&rarr;</span></a></li>
+            <!-- <li><a href="#login">Login <span aria-hidden="true">&rarr;</span></a></li> -->
             <li><a href="mailto:hello@cartelux.ai">Contact</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
             <li><a href="/terms-of-use">Terms of Use</a></li>

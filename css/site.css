@@ -919,6 +919,13 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: var(--bg-alt-light);
   color: var(--ink);
   font-size: 1.125rem;
+  align-items: center;
+}
+
+.demo-form-visual {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
 }
 
 .demo-form-col--form {

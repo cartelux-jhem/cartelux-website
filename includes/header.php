@@ -14,7 +14,7 @@
         <li><a href="/press">Press</a></li>
         <li><a href="/request-demo">Request Demo</a></li>
       </ul>
-      <a class="nav-login" href="#login">Login <span aria-hidden="true">&rarr;</span></a>
+      <!-- <a class="nav-login" href="#login">Login <span aria-hidden="true">&rarr;</span></a> -->
     </nav>
 
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
