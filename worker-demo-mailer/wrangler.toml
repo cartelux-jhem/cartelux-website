@@ -4,7 +4,7 @@ compatibility_date = "2026-09-18"
 
 [[send_email]]
 name = "EMAIL"
-destination_address = "marketing@cartelux.ai"
+allowed_destination_addresses = ["marketing@cartelux.ai", "jhemar.danio@cartelux.ai"]
 
 [[routes]]
 pattern = "demo-mailer.cartelux.ai"

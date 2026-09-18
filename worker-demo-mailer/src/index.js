@@ -83,7 +83,7 @@ export default {
 
     try {
       await env.EMAIL.send({
-        to: 'marketing@cartelux.ai',
+        to: 'jhemar.danio@cartelux.ai', // TODO: switch back to marketing@cartelux.ai once verified end-to-end
         from: 'Cartelux Website <noreply@notify.cartelux.ai>',
         subject: `New demo request from ${firstName} ${lastName}`,
         html,

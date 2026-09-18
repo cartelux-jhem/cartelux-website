@@ -48,7 +48,7 @@
     <div class="footer-newsletter">
         <h4>Newsletter</h4>
         <p class="newsletter-text">Get regular updates on Cartelux</p>
-        <a class="newsletter-btn" href="mailto:hello@cartelux.ai?subject=Newsletter%20signup">SIGN UP</a>
+        <a class="newsletter-btn" href="mailto:marketing@cartelux.ai?subject=Newsletter%20signup">SIGN UP</a>
 
         
     </div>
