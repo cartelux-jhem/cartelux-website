@@ -13,7 +13,7 @@
           <h4>Company</h4>
           <ul>
             <li><a href="/press">Press</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><a href="/careers">Careers</a></li>
             <li><a href="mailto:hello@cartelux.ai">Contact</a></li>
           </ul>
         </div>

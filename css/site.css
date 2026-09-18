@@ -1442,3 +1442,36 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 560px) {
   .stats-grid--4 { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   Careers page
+   ============================================================ */
+.careers-values .section-head { max-width: 72ch; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-7) var(--space-6);
+}
+
+.value-item h3 { font-size: 1.1rem; margin-bottom: var(--space-3); color: var(--accent-deep); }
+.value-item p { color: var(--ink-soft); }
+
+.careers-positions .lede { margin-bottom: var(--space-6); }
+
+.careers-cta {
+  max-width: 68ch;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.careers-cta p { color: var(--ink-soft); }
+.careers-cta .link-arrow { display: inline; }
+
+@media (max-width: 860px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
