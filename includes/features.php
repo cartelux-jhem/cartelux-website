@@ -1,4 +1,4 @@
-<section class="section" id="solutions">
+<section class="section">
   <div class="wrap">
     
 

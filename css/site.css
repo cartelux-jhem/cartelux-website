@@ -1351,3 +1351,94 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 560px) {
   .investors-cta { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   Solutions page
+   ============================================================ */
+.solutions-hero .eyebrow { color: #fff; }
+.solutions-hero .eyebrow::before { background: #fff; }
+
+.solutions-hero h1 {
+  color: #fff;
+  max-width: 22ch;
+  font-size: clamp(2.2rem, 1.6rem + 2.2vw, 3.2rem);
+}
+
+.solutions-hero .lede {
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: var(--space-5);
+  max-width: 68ch;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-deep);
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-4);
+}
+
+.stats-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.solutions-case .case-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.case-heading img { height: 28px; width: auto; }
+
+.case-video-row {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.case-quote { margin: 0; }
+.case-quote p {
+  font-family: var(--font-head);
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink);
+  max-width: none;
+}
+.case-quote cite {
+  display: block;
+  margin-top: var(--space-4);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.case-study-grid h3 { font-size: 1.05rem; margin-bottom: var(--space-3); color: var(--accent-deep); }
+.case-study-grid p { color: var(--ink-soft); }
+
+.case-download { margin-top: var(--space-7); margin-bottom: 0; }
+
+@media (max-width: 860px) {
+  .stats-grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .case-video-row { grid-template-columns: 1fr; }
+  .case-study-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+}
+
+@media (max-width: 560px) {
+  .stats-grid--4 { grid-template-columns: 1fr; }
+}
