@@ -50,6 +50,7 @@
         <form class="newsletter-form" id="newsletter-form">
           <label for="footer-email">Get regular updates on Cartelux</label>
           <input type="email" id="footer-email" name="email" placeholder="Enter e-mail address" required>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAE7jrwvczx7bc8uZ" data-size="compact"></div>
           <button type="submit">SIGN UP</button>
           <p class="newsletter-message" role="status" aria-live="polite" hidden></p>
         </form>
@@ -60,3 +61,5 @@
     </div>
   </div>
 </footer>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

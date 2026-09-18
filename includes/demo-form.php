@@ -1,6 +1,6 @@
 <section class="demo-form-section">
   <div class="demo-form-col demo-form-col--info">
-    <img class="demo-form-visual" src="images/Cartelux_08_04.svg" alt="Illustration of the Cartelux platform" loading="lazy">
+    <p>Please leave your details and our helpful team will get in touch to organize a Demo of the Cartelux Platform!</p>
   </div>
 
   <div class="demo-form-col demo-form-col--form">
@@ -26,6 +26,8 @@
         <label for="demo-phone">Phone</label>
         <input type="tel" id="demo-phone" name="phone" autocomplete="tel">
       </div>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAE7jrwvczx7bc8uZ"></div>
 
       <button type="submit" class="demo-form-submit">
         <span class="demo-form-submit-label">SEND</span>

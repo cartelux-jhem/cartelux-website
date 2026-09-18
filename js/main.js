@@ -85,11 +85,13 @@
     var NEWSLETTER_ENDPOINT = 'https://newsletter.cartelux.ai/';
     var newsletterButton = newsletterForm.querySelector('button');
     var newsletterMessage = newsletterForm.querySelector('.newsletter-message');
+    var newsletterTurnstile = newsletterForm.querySelector('.cf-turnstile');
 
     newsletterForm.addEventListener('submit', function (event) {
       event.preventDefault();
 
       var email = newsletterForm.email.value.trim();
+      var turnstileField = newsletterForm.querySelector('[name="cf-turnstile-response"]');
 
       newsletterButton.disabled = true;
       newsletterButton.textContent = 'SIGNING UP…';
@@ -101,7 +103,10 @@
       fetch(NEWSLETTER_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email }),
+        body: JSON.stringify({
+          email: email,
+          turnstileToken: turnstileField ? turnstileField.value : '',
+        }),
         signal: newsletterController.signal,
       })
         .then(function (response) {
@@ -122,6 +127,7 @@
           newsletterMessage.hidden = false;
           newsletterMessage.classList.add('newsletter-message--error');
           newsletterMessage.textContent = 'Something went wrong. Please try again.';
+          if (window.turnstile && newsletterTurnstile) window.turnstile.reset(newsletterTurnstile);
         });
     });
   }
