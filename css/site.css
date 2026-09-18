@@ -15,6 +15,7 @@
 
   --footer-bg: #1F1F1E;
   --footer-ink: #FFFFFF;
+  --bg-alt-light: #EFEFEF;
 
   --radius: 14px;
   --radius-pill: 999px;
@@ -815,4 +816,124 @@ ul { margin: 0; padding: 0; list-style: none; }
   .pillars { grid-template-columns: 1fr; gap: var(--space-6); }
   .logo-slot { width: 112px; height: 40px; padding-inline: var(--space-4); }
   .footer-bottom { flex-direction: column; gap: var(--space-3); }
+}
+
+/* ============================================================
+   Request Demo page
+   ============================================================ */
+.demo-banner {
+  background: var(--footer-bg);
+  color: #fff;
+  padding-block: clamp(var(--space-9), 10vw, 140px);
+}
+
+.eyebrow--light {
+  color: rgba(255, 255, 255, 0.75);
+}
+.eyebrow--light::before { background: rgba(255, 255, 255, 0.75); }
+
+.demo-banner h1 {
+  color: #fff;
+  font-size: clamp(2.2rem, 1.6rem + 2.5vw, 3.2rem);
+}
+
+.demo-banner-divider {
+  max-width: var(--container);
+  margin: var(--space-8) auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.demo-form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+}
+
+.demo-form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(var(--space-7), 6vw, var(--space-9)) clamp(var(--space-5), 6vw, 96px);
+}
+
+.demo-form-col--info {
+  background: var(--bg-alt-light);
+  color: var(--ink);
+  font-size: 1.125rem;
+}
+
+.demo-form-col--form {
+  background: var(--accent);
+  color: #fff;
+}
+
+.demo-form-col--form h2 {
+  font-family: var(--font-head);
+  color: #fff;
+  margin-bottom: var(--space-6);
+}
+
+.demo-form-col--form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-field input {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form-field input::placeholder { color: rgba(255, 255, 255, 0.65); }
+
+.form-field input:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.demo-form-submit {
+  align-self: flex-start;
+  margin-top: var(--space-3);
+  background: #fff;
+  color: var(--accent-deep);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 24px 8px 8px 24px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.demo-form-submit:hover { opacity: 0.9; }
+.demo-form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.demo-form-message {
+  margin-top: var(--space-5);
+  font-weight: 600;
+}
+
+.demo-form-message--error { color: #fff2f2; }
+
+@media (max-width: 860px) {
+  .demo-form-section { grid-template-columns: 1fr; }
 }

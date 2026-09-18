@@ -1,0 +1,11 @@
+name = "cartelux-demo-mailer"
+main = "src/index.js"
+compatibility_date = "2026-09-18"
+
+[[send_email]]
+name = "EMAIL"
+destination_address = "marketing@cartelux.ai"
+
+[[routes]]
+pattern = "demo-mailer.cartelux.ai"
+custom_domain = true

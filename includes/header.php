@@ -12,7 +12,7 @@
         <li><a href="#investors">Investors</a></li>
         <li><a href="#careers">Career</a></li>
         <li><a href="#press">Press</a></li>
-        <li><a href="#contact">Request Demo</a></li>
+        <li><a href="/request-demo">Request Demo</a></li>
       </ul>
       <a class="nav-login" href="#login">Login <span aria-hidden="true">&rarr;</span></a>
     </nav>

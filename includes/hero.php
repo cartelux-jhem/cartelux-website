@@ -9,7 +9,7 @@
         <p class="lede">Cartelux empowers automotive retailers to create and measure hyper-local, brand-compliant digital marketing campaigns in less than 60 seconds.</p>
 
         <div class="hero-cta">
-          <a class="btn btn-light" href="#contact">REQUEST DEMO</a>
+          <a class="btn btn-light" href="/request-demo">REQUEST DEMO</a>
         </div>
       </div>
 
