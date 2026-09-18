@@ -4,8 +4,9 @@ set -euo pipefail
 rm -rf dist
 mkdir -p dist
 
-php index.php > dist/index.html
-php request-demo.php > dist/request-demo.html
+for page in *.php; do
+  php "$page" > "dist/${page%.php}.html"
+done
 
 cp -r css js images fonts dist/
 cp .htaccess dist/ 2>/dev/null || true
