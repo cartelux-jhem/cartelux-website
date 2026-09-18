@@ -1,0 +1,11 @@
+name = "cartelux-newsletter"
+main = "src/index.js"
+compatibility_date = "2026-09-18"
+
+[[send_email]]
+name = "EMAIL"
+allowed_destination_addresses = ["marketing@cartelux.ai", "jhemar.danio@cartelux.ai"]
+
+[[routes]]
+pattern = "newsletter.cartelux.ai"
+custom_domain = true

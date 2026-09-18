@@ -51,6 +51,7 @@
           <label for="footer-email">Get regular updates on Cartelux</label>
           <input type="email" id="footer-email" name="email" placeholder="Enter e-mail address" required>
           <button type="submit">SIGN UP</button>
+          <p class="newsletter-message" role="status" aria-live="polite" hidden></p>
         </form>
     </div>
 

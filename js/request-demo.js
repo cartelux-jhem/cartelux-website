@@ -22,12 +22,17 @@
     submitLabel.textContent = 'SENDING…';
     message.hidden = true;
 
+    var controller = new AbortController();
+    var timeout = setTimeout(function () { controller.abort(); }, 15000);
+
     fetch(ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
+      signal: controller.signal,
     })
       .then(function (response) {
+        clearTimeout(timeout);
         if (!response.ok) throw new Error('Request failed');
 
         form.hidden = true;
@@ -36,6 +41,7 @@
         message.textContent = "Thanks! Our team will be in touch shortly to schedule your demo.";
       })
       .catch(function () {
+        clearTimeout(timeout);
         submitButton.disabled = false;
         submitLabel.textContent = 'SEND';
         message.hidden = false;

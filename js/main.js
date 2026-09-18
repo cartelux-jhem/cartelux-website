@@ -82,12 +82,47 @@
 
   var newsletterForm = document.getElementById('newsletter-form');
   if (newsletterForm) {
+    var NEWSLETTER_ENDPOINT = 'https://newsletter.cartelux.ai/';
+    var newsletterButton = newsletterForm.querySelector('button');
+    var newsletterMessage = newsletterForm.querySelector('.newsletter-message');
+
     newsletterForm.addEventListener('submit', function (event) {
       event.preventDefault();
+
       var email = newsletterForm.email.value.trim();
-      var subject = encodeURIComponent('Newsletter signup');
-      var body = encodeURIComponent('Please add ' + email + ' to the Cartelux newsletter.');
-      window.location.href = 'mailto:marketing@cartelux.ai?subject=' + subject + '&body=' + body;
+
+      newsletterButton.disabled = true;
+      newsletterButton.textContent = 'SIGNING UP…';
+      newsletterMessage.hidden = true;
+
+      var newsletterController = new AbortController();
+      var newsletterTimeout = setTimeout(function () { newsletterController.abort(); }, 15000);
+
+      fetch(NEWSLETTER_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email }),
+        signal: newsletterController.signal,
+      })
+        .then(function (response) {
+          clearTimeout(newsletterTimeout);
+          if (!response.ok) throw new Error('Request failed');
+
+          newsletterForm.reset();
+          newsletterButton.disabled = false;
+          newsletterButton.textContent = 'SIGN UP';
+          newsletterMessage.hidden = false;
+          newsletterMessage.classList.remove('newsletter-message--error');
+          newsletterMessage.textContent = "Thanks! You're on the list.";
+        })
+        .catch(function () {
+          clearTimeout(newsletterTimeout);
+          newsletterButton.disabled = false;
+          newsletterButton.textContent = 'SIGN UP';
+          newsletterMessage.hidden = false;
+          newsletterMessage.classList.add('newsletter-message--error');
+          newsletterMessage.textContent = 'Something went wrong. Please try again.';
+        });
     });
   }
 })();

@@ -26,6 +26,7 @@
 
   <?php include __DIR__ . '/includes/footer.php'; ?>
 
+  <script src="<?php echo asset_url('js/main.js'); ?>"></script>
   <script src="<?php echo asset_url('js/request-demo.js'); ?>"></script>
 </body>
 </html>
