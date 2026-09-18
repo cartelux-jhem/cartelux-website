@@ -1,0 +1,14 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="82" cy="90" r="46" fill="#ECECEC" stroke="#1D1D1B" stroke-width="4"/>
+<path d="M82 44C99.6731 44 114 65.222 114 90C114 114.778 99.6731 136 82 136V44Z" fill="#F5B1B1" stroke="#1D1D1B" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="82" cy="90" rx="46" ry="16" fill="none" stroke="#1D1D1B" stroke-width="2" stroke-dasharray="2 7" opacity="0.55"/>
+<line x1="82" y1="44" x2="82" y2="136" stroke="#1D1D1B" stroke-width="2" stroke-dasharray="2 7" opacity="0.55"/>
+<g>
+  <path d="M40 8C51.0457 8 60 16.9543 60 28C60 41 40 62 40 62C40 62 20 41 20 28C20 16.9543 28.9543 8 40 8Z" fill="#EA565C" stroke="#1D1D1B" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="40" cy="27" r="7.5" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="3"/>
+</g>
+<g transform="translate(96,68) scale(0.55)">
+  <path d="M40 8C51.0457 8 60 16.9543 60 28C60 41 40 62 40 62C40 62 20 41 20 28C20 16.9543 28.9543 8 40 8Z" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="40" cy="27" r="7.5" fill="#EA565C" stroke="#1D1D1B" stroke-width="3"/>
+</g>
+</svg>

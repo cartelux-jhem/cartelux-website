@@ -1,0 +1,53 @@
+<svg width="440" height="440" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <g stroke="#FFFFFF" stroke-width="2.5" opacity="0.85">
+    <line x1="230" y1="72" x2="86" y2="150"/>
+    <line x1="230" y1="72" x2="356" y2="140"/>
+    <line x1="230" y1="72" x2="222" y2="230"/>
+    <line x1="86" y1="150" x2="222" y2="230"/>
+    <line x1="356" y1="140" x2="222" y2="230"/>
+    <line x1="356" y1="140" x2="404" y2="230"/>
+    <line x1="222" y1="230" x2="104" y2="300"/>
+    <line x1="222" y1="230" x2="352" y2="304"/>
+    <line x1="104" y1="300" x2="256" y2="378"/>
+    <line x1="352" y1="304" x2="256" y2="378"/>
+    <line x1="104" y1="300" x2="352" y2="304"/>
+    <line x1="404" y1="230" x2="352" y2="304"/>
+  </g>
+
+  <!-- play -->
+  <circle cx="230" cy="72" r="44" fill="#EA565C" stroke="#1D1D1B" stroke-width="4"/>
+  <path d="M218 54L218 90L248 72Z" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- person, upper-left -->
+  <circle cx="86" cy="150" r="40" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="4"/>
+  <circle cx="86" cy="138" r="12" fill="#F08487" stroke="#1D1D1B" stroke-width="3"/>
+  <path d="M62 178C62 160 72 150 86 150C100 150 110 160 110 178" fill="#F08487" stroke="#1D1D1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- pin, upper-right -->
+  <circle cx="356" cy="140" r="50" fill="#F5B1B1" stroke="#1D1D1B" stroke-width="4"/>
+  <path d="M356 114C369 114 380 125 380 138C380 154 356 174 356 174C356 174 332 154 332 138C332 125 343 114 356 114Z" fill="#EA565C" stroke="#1D1D1B" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="356" cy="137" r="8" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="3"/>
+
+  <!-- small dot, right -->
+  <circle cx="404" cy="230" r="16" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="3"/>
+
+  <!-- person, center -->
+  <circle cx="222" cy="230" r="42" fill="#EA565C" stroke="#1D1D1B" stroke-width="4"/>
+  <circle cx="222" cy="218" r="13" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="3"/>
+  <path d="M196 260C196 242 208 230 222 230C236 230 248 242 248 260" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- bar chart, lower-left -->
+  <circle cx="104" cy="300" r="50" fill="#ECECEC" stroke="#1D1D1B" stroke-width="4"/>
+  <line x1="78" y1="330" x2="130" y2="330" stroke="#1D1D1B" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="82" y="308" width="12" height="22" fill="#F08487" stroke="#1D1D1B" stroke-width="2.5"/>
+  <rect x="98" y="294" width="12" height="36" fill="#EA565C" stroke="#1D1D1B" stroke-width="2.5"/>
+  <rect x="114" y="282" width="12" height="48" fill="#F5B1B1" stroke="#1D1D1B" stroke-width="2.5"/>
+
+  <!-- person, lower-right, largest -->
+  <circle cx="352" cy="304" r="54" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="4"/>
+  <circle cx="352" cy="288" r="15" fill="#EA565C" stroke="#1D1D1B" stroke-width="3"/>
+  <path d="M320 338C320 316 334 304 352 304C370 304 384 316 384 338" fill="#EA565C" stroke="#1D1D1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- small dot, bottom -->
+  <circle cx="256" cy="378" r="15" fill="#EA565C" stroke="#1D1D1B" stroke-width="3"/>
+</svg>
