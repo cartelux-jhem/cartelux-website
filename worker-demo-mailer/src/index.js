@@ -37,7 +37,7 @@ function jsonResponse(body, status, origin) {
 }
 
 async function verifyTurnstile(token, ip, secret) {
-  if (!token) return false;
+  if (!token) return { success: false, 'error-codes': ['missing-input-response'] };
 
   const body = new URLSearchParams();
   body.append('secret', secret);
@@ -48,8 +48,7 @@ async function verifyTurnstile(token, ip, secret) {
     method: 'POST',
     body,
   });
-  const result = await res.json();
-  return result.success === true;
+  return res.json();
 }
 
 export default {
@@ -81,9 +80,9 @@ export default {
       return jsonResponse({ error: 'Missing or invalid required fields' }, 400, origin);
     }
 
-    const turnstileOk = await verifyTurnstile(turnstileToken, request.headers.get('CF-Connecting-IP'), env.TURNSTILE_SECRET);
-    if (!turnstileOk) {
-      return jsonResponse({ error: 'Anti-spam check failed. Please try again.' }, 400, origin);
+    const turnstileResult = await verifyTurnstile(turnstileToken, request.headers.get('CF-Connecting-IP'), env.TURNSTILE_SECRET);
+    if (turnstileResult.success !== true) {
+      return jsonResponse({ error: 'Anti-spam check failed. Please try again.', detail: turnstileResult['error-codes'] }, 400, origin);
     }
 
     const text = [

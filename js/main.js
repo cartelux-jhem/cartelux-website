@@ -112,7 +112,10 @@
         .then(function (response) {
           clearTimeout(newsletterTimeout);
           return response.json().catch(function () { return {}; }).then(function (body) {
-            if (!response.ok) throw new Error(body.error || 'Request failed');
+            if (!response.ok) {
+              var detail = Array.isArray(body.detail) ? ' (' + body.detail.join(', ') + ')' : (body.detail ? ' (' + body.detail + ')' : '');
+              throw new Error((body.error || 'Request failed') + detail);
+            }
 
             newsletterForm.reset();
             newsletterButton.disabled = false;
