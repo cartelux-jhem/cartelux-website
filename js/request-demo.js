@@ -35,7 +35,8 @@
         clearTimeout(timeout);
         if (!response.ok) throw new Error('Request failed');
 
-        form.hidden = true;
+        submitLabel.textContent = 'SENT';
+        form.querySelectorAll('input').forEach(function (input) { input.disabled = true; });
         message.hidden = false;
         message.classList.remove('demo-form-message--error');
         message.textContent = "Thanks! Our team will be in touch shortly to schedule your demo.";
