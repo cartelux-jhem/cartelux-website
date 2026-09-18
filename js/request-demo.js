@@ -37,21 +37,23 @@
     })
       .then(function (response) {
         clearTimeout(timeout);
-        if (!response.ok) throw new Error('Request failed');
+        return response.json().catch(function () { return {}; }).then(function (body) {
+          if (!response.ok) throw new Error(body.error || 'Request failed');
 
-        submitLabel.textContent = 'SENT';
-        form.querySelectorAll('input').forEach(function (input) { input.disabled = true; });
-        message.hidden = false;
-        message.classList.remove('demo-form-message--error');
-        message.textContent = "Thanks! Our team will be in touch shortly to schedule your demo.";
+          submitLabel.textContent = 'SENT';
+          form.querySelectorAll('input').forEach(function (input) { input.disabled = true; });
+          message.hidden = false;
+          message.classList.remove('demo-form-message--error');
+          message.textContent = "Thanks! Our team will be in touch shortly to schedule your demo.";
+        });
       })
-      .catch(function () {
+      .catch(function (err) {
         clearTimeout(timeout);
         submitButton.disabled = false;
         submitLabel.textContent = 'SEND';
         message.hidden = false;
         message.classList.add('demo-form-message--error');
-        message.textContent = 'Something went wrong sending your request. Please try again or email us directly.';
+        message.textContent = (err && err.message) || 'Something went wrong sending your request. Please try again or email us directly.';
         if (window.turnstile && turnstileContainer) window.turnstile.reset(turnstileContainer);
       });
   });

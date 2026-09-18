@@ -111,22 +111,24 @@
       })
         .then(function (response) {
           clearTimeout(newsletterTimeout);
-          if (!response.ok) throw new Error('Request failed');
+          return response.json().catch(function () { return {}; }).then(function (body) {
+            if (!response.ok) throw new Error(body.error || 'Request failed');
 
-          newsletterForm.reset();
-          newsletterButton.disabled = false;
-          newsletterButton.textContent = 'SIGN UP';
-          newsletterMessage.hidden = false;
-          newsletterMessage.classList.remove('newsletter-message--error');
-          newsletterMessage.textContent = "Thanks! You're on the list.";
+            newsletterForm.reset();
+            newsletterButton.disabled = false;
+            newsletterButton.textContent = 'SIGN UP';
+            newsletterMessage.hidden = false;
+            newsletterMessage.classList.remove('newsletter-message--error');
+            newsletterMessage.textContent = "Thanks! You're on the list.";
+          });
         })
-        .catch(function () {
+        .catch(function (err) {
           clearTimeout(newsletterTimeout);
           newsletterButton.disabled = false;
           newsletterButton.textContent = 'SIGN UP';
           newsletterMessage.hidden = false;
           newsletterMessage.classList.add('newsletter-message--error');
-          newsletterMessage.textContent = 'Something went wrong. Please try again.';
+          newsletterMessage.textContent = (err && err.message) || 'Something went wrong. Please try again.';
           if (window.turnstile && newsletterTurnstile) window.turnstile.reset(newsletterTurnstile);
         });
     });
