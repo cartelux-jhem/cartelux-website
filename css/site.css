@@ -938,8 +938,34 @@ ul { margin: 0; padding: 0; list-style: none; }
 .demo-form-col--info {
   background: var(--bg-alt-light);
   color: var(--ink);
-  font-size: 1.125rem;
   align-items: center;
+  text-align: center;
+}
+
+.demo-form-quote {
+  position: relative;
+  max-width: 22ch;
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.2rem);
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.demo-form-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.55em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-head);
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.28;
+  pointer-events: none;
 }
 
 .demo-form-visual {

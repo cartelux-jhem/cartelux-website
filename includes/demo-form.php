@@ -1,6 +1,6 @@
 <section class="demo-form-section">
   <div class="demo-form-col demo-form-col--info">
-    <p>Please leave your details and our helpful team will get in touch to organize a Demo of the Cartelux Platform!</p>
+    <p class="demo-form-quote">Please leave your details and our helpful team will get in touch to organize a demo of the Cartelux platform.</p>
   </div>
 
   <div class="demo-form-col demo-form-col--form">
