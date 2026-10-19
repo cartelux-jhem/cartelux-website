@@ -872,7 +872,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   }
 
   .hero-row { grid-template-columns: 1fr; }
-  .hero-media { order: -1; }
   .hero-media video { aspect-ratio: 4 / 3; }
 
   .pillars { gap: var(--space-6) var(--space-5); padding: var(--space-6) var(--space-5); }
