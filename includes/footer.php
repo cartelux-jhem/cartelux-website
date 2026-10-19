@@ -3,7 +3,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a class="logo" href="/" aria-label="Cartelux home">
-          <img src="images/Logo_white.svg" alt="Cartelux" width="225" height="20">
+          <img src="<?php echo $asset_base ?? ''; ?>images/Logo_white.svg" alt="Cartelux" width="225" height="20" loading="lazy">
         </a>
         <p class="footer-address">
           Cartelux Australia Pty Ltd<br>

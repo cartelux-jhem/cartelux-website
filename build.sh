@@ -9,4 +9,5 @@ for page in *.php; do
 done
 
 cp -r css js images fonts dist/
+cp robots.txt sitemap.xml _headers dist/
 cp .htaccess dist/ 2>/dev/null || true

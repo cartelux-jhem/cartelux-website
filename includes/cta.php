@@ -1,5 +1,5 @@
 <section class="cta-band" id="contact">
-  <img class="cta-motif" src="images/Cartelux_08_02.svg" alt="" aria-hidden="true">
+  <img class="cta-motif" src="images/Cartelux_08_02.svg" alt="" aria-hidden="true" loading="lazy">
 
   <div class="wrap">
     <h2>Want to test drive the Cartelux platform?</h2>

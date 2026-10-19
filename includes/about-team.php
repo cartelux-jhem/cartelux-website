@@ -6,7 +6,7 @@
 
     <div class="team">
       <div class="person">
-        <img src="images/About/josh-williams2.jpg" alt="" width="88" height="88">
+        <img src="images/About/josh-williams2.jpg" alt="" width="88" height="88" loading="lazy">
         <h3>Josh Williams</h3>
         <p class="role">Founder &amp; CEO</p>
         <button type="button" class="bio-toggle" aria-expanded="false" aria-controls="bio-josh">
@@ -17,7 +17,7 @@
       </div>
 
       <div class="person">
-        <img src="images/About/stephen_burns3.jpg" alt="" width="88" height="88">
+        <img src="images/About/stephen_burns3.jpg" alt="" width="88" height="88" loading="lazy">
         <h3>Stephen Burns</h3>
         <p class="role">Chief Financial Officer</p>
         <button type="button" class="bio-toggle" aria-expanded="false" aria-controls="bio-stephen">

@@ -1,7 +1,7 @@
 <section class="section section--tint solutions-case">
   <div class="wrap">
     <div class="case-heading">
-      <img src="images/ford.svg" alt="Ford" width="56" height="20">
+      <img src="images/ford.svg" alt="Ford" width="56" height="20" loading="lazy">
       <h2 class="heading-accent">Case study: Ford</h2>
     </div>
     <p class="lede">Leading digital transformation from Ford&rsquo;s ASEAN innovation hub.</p>

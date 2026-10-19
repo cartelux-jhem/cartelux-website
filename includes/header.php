@@ -2,7 +2,7 @@
 <header class="site-header" id="site-header">
   <div class="wrap">
     <a class="logo" href="/" aria-label="Cartelux home">
-      <img src="images/Logo.svg" alt="Cartelux" width="135" height="12">
+      <img src="<?php echo $asset_base ?? ''; ?>images/Logo.svg" alt="Cartelux" width="135" height="12">
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Primary">

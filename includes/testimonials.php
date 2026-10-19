@@ -12,7 +12,7 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;The Cartelux platform is a true evolution in automotive retail marketing.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-alex.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-alex.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Alex McLean</div>
                 <div class="role">Head of Marketing, BMW ANZ</div>
@@ -25,13 +25,13 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;Cartelux is enabling MINI to deliver cohesive, integrated digital campaigns in a way that was previously much more laborious.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-victoria.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-victoria.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Victoria Abbass</div>
                 <div class="role">Retail and Network Marketing Manager, MINI ANZ</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/mini.svg" alt="MINI" width="53" height="24"></div>
+            <div class="brand-mark"><img src="images/mini.svg" alt="MINI" width="53" height="24" loading="lazy"></div>
           </figure>
         </li>
 
@@ -39,13 +39,13 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;Cartelux is the future of performance-driven retail marketing, offering an entirely new playground of marketing alignment across tiers.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-nikolas.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-nikolas.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Nikolas Souliotis</div>
                 <div class="role">Digital Marketing Manager, Kia Australia</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/kia.svg" alt="Kia" width="52" height="12"></div>
+            <div class="brand-mark"><img src="images/kia.svg" alt="Kia" width="52" height="12" loading="lazy"></div>
           </figure>
         </li>
 
@@ -53,13 +53,13 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;Working with Cartelux we have been able to provide a new way for Kia to create engaging video content for its dealers at scale.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-randy.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-randy.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Randy Han</div>
                 <div class="role">Global Lead Automotive, Google</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/google.svg" alt="Google" width="61" height="20"></div>
+            <div class="brand-mark"><img src="images/google.svg" alt="Google" width="61" height="20" loading="lazy"></div>
           </figure>
         </li>
 
@@ -67,13 +67,13 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;Cartelux allows dealers to participate in Google&rsquo;s global knowledge pool, creating access to campaign professionality &mdash; simple and time efficient.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-irin.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-irin.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Irin Khandhajavana</div>
                 <div class="role">SEA &amp; MENA Lead Automotive, Google</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/google.svg" alt="Google" width="61" height="20"></div>
+            <div class="brand-mark"><img src="images/google.svg" alt="Google" width="61" height="20" loading="lazy"></div>
           </figure>
         </li>
 
@@ -87,7 +87,7 @@
                 <div class="role">Marketing Director, Ford Thailand</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/ford.svg" alt="Ford" width="56" height="20"></div>
+            <div class="brand-mark"><img src="images/ford.svg" alt="Ford" width="56" height="20" loading="lazy"></div>
           </figure>
         </li>
 
@@ -95,13 +95,13 @@
           <figure class="testimonial-slide">
             <blockquote>&ldquo;The pilot showcased the competitive advantage we gained by using the Cartelux software.&rdquo;</blockquote>
             <figcaption class="who">
-              <img class="avatar" src="images/quote-logo-elena.jpg" alt="" width="72" height="72">
+              <img class="avatar" src="images/quote-logo-elena.jpg" alt="" width="72" height="72" loading="lazy">
               <div>
                 <div class="name">Elena Woods</div>
                 <div class="role">Marketing Communications Manager, Renault Australia</div>
               </div>
             </figcaption>
-            <div class="brand-mark"><img src="images/renault.png" alt="Renault" width="500" height="421"></div>
+            <div class="brand-mark"><img src="images/renault.png" alt="Renault" width="131" height="110" loading="lazy"></div>
           </figure>
         </li>
       </ul>

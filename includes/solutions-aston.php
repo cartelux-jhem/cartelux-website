@@ -1,7 +1,7 @@
 <section class="section solutions-case">
   <div class="wrap">
     <div class="case-heading">
-      <img src="images/astonmartin.png" alt="Aston Martin" width="56" height="13">
+      <img src="images/astonmartin.png" alt="Aston Martin" width="56" height="13" loading="lazy">
       <h2 class="heading-accent">Testimonial: Aston Martin</h2>
     </div>
 
